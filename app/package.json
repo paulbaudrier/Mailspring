@@ -80,11 +80,17 @@
     "uuid": "^3.0.0",
     "vcf": "^2.0.5",
     "windows-shortcuts": "emorikawa/windows-shortcuts#b0a0fc7",
-    "xlsx": "0.14.1"
+    "xlsx": "0.14.1",
+    "snyk": "^1.316.1"
   },
   "optionalDependencies": {
     "macos-notification-state": "^1.1.0",
     "node-mac-notifier": "1.1.0",
     "windows-quiet-hours": "^1.2.5"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
